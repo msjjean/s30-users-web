@@ -13,7 +13,7 @@ const UserIndex = ({users}) => {
                 {
                     users.map((user) => (
                         <tr className="" key={`user_${user.id}`}>
-                            <td>{ user.name }</td>
+                            <td>{ user.full_name }</td>
                             <td>{ user.email }</td>
                         </tr>
                     ))

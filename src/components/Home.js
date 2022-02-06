@@ -1,24 +1,22 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 import UserIndex from './users/UserIndex';
 
 const Home = () => {
-     const [users, setUsers] = useState([
-		{
-			id: 1,
-			name: 'Lee Dokyeom',
-			email: 'sample@gmail.com',
-		},
-		{
-			id: 2,
-			name: 'Kim Mingyu',
-			email: 'sample@gmail.com',
-		},
-		{
-			id: 3,
-			name: 'Yoon Jeonghan',
-			email: 'sample@gmail.com',
-		},
-	]);
+    const [users, setUsers] = useState([]);
+
+    useEffect( () => {
+        axios.get('http://127.0.0.1:8000/api/users')
+            .then(function ({ data }) {
+                setUsers(data.users);
+            })
+            .catch(function (error) {
+                console.log(error);
+            })
+            .then(function () {
+                //console.log('always exec');
+            });  
+    }, []);
 
     return ( 
         <UserIndex users={users} />
