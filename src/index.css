@@ -1,115 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
 
 :root {
-	--black: #333;
-	--blue:  #4267B2;
-	--gray: #e0e0e0;
+  --black: #333;
+  --blue:  #4267B2;
+  --gray: #e0e0e0;
 }
 
 * {
-	margin: 0;
-	font-family: "Roboto";
-	color: var(--black);
+  margin: 0;
+  font-family: "Roboto";
+  color: var(--black);
 }
 
 .App {
-	width: 100%;
-	max-width: 1280px;
-	margin: 0 auto;
-	position: relative;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
 }
 
 
 .nav-bar {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	align-items: center; 
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center; 
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .nav-bar .brand {
-	flex: 0 0 300px;
-	font-size: 24px;
-	padding: 20px 0;
-	font-weight: 500;
-	color: var(--blue);
+  flex: 0 0 300px;
+  font-size: 24px;
+  padding: 20px 0;
+  font-weight: 500;
+  color: var(--blue);
 }
 
 .nav-bar .brand a {
-	color: var(--blue);
+  color: var(--blue);
 }
 
 .nav-bar .menu-links {
-	flex: 1 0 5%;
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	justify-content: flex-end;
+  flex: 1 0 5%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .nav-bar .menu-links a{
-	padding: 20px 35px;
-	font-weight: 500;
+  padding: 20px 35px;
+  font-weight: 500;
 }
 
 .nav-bar .menu-links a:hover{
-	color: var(--blue);
+  color: var(--blue);
 }
 
 .page-title {
-	margin-bottom: 30px;
-	text-align: center;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .table {
-	width: 100%;
-	border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .table thead {
-	text-align: left;
-	background-color: var(--gray);
-	color: var(--black);
+  text-align: left;
+  background-color: var(--gray);
+  color: var(--black);
 }
 
 .table td, .table th {
-	padding: 0.75rem;
-	border-top: 1px solid #dee2e6;
+  padding: 0.75rem;
+  border-top: 1px solid #dee2e6;
 }
 
 
 .user-form {
-	max-width: 50%;
-	margin: 0 auto;
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 .user-form input, .user-form textarea, .user-form select {
-	width: 100%;
-	padding: 6px 10px;
-	margin: 10px 0 20px;
-	border: 1px solid #ddd;
-	box-sizing: border-box;
-	display: block;
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0 20px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
 }
 
 .user-form .btn-div {
-	width: 100%;
-	margin: 0 auto;
-	display: flex;
-	justify-content: flex-end;
-	margin: 10px 0;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0;
 }
 
 .user-form .btn-div button {
-	background: var(--blue);
-	color: #fff;
-	border: 0;
-	padding: 8px 20px;
-	border-radius: 8px;
-	cursor: pointer;
+  background: var(--blue);
+  color: #fff;
+  border: 0;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
 }
   
